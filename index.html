@@ -84,11 +84,53 @@
                 </svg>
                 <span class="visually-hidden">Закрыть</span>
               </button>
-              <p class="modal-text">
-                Вам необходим веб-сайт для досуга или бизнеса? Мы оправдаем Ваше
-                доверие! Только профессиональные услуги от специалистов
-                WebStudio.
-              </p>
+              <form class="hero-form" autocomplete="on">
+                <div class="hero-group" aria-labelledby="form-details">
+                  <h2 class="form-title modal-text" id="form-details">
+                    Оставьте свои данные, мы вам перезвоним
+                  </h2>
+                  <label class="form-label" for="form-name">Имя</label>
+                  <input
+                    class="form-name"
+                    id="form-name"
+                    type="text"
+                    name="name"
+                  />
+                  <label class="form-label" for="form-phone">Телефон</label>
+                  <input
+                    class="form-phone"
+                    id="form-phone"
+                    type="tel"
+                    name="phone"
+                  />
+                  <label class="form-label" for="form-mail">Почта</label>
+                  <input
+                    class="form-mail"
+                    id="form-mail"
+                    type="email"
+                    name="mail"
+                  />
+                  <label class="form-label" for="form-comments"
+                    >Комментарий</label
+                  >
+                  <textarea
+                    class="form-comments"
+                    id="form-comments"
+                    name="comments"
+                    placeholder="Введите текст"
+                  /></textarea>
+                  <input
+                    class="form-acceptance"
+                    id="form-acceptance"
+                    type="checkbox"
+                    name="acceptance"
+                  />
+                  <label class="form-label" for="form-acceptance">Соглашаюсь с рассылкой и принимаю <a class="form-link link" href="https://goit.ua/fullstackonline/">Условия договора</a></label>
+                </div>
+                <button class="btn hero-button" type="submit">
+                    Отправить
+                </button>
+              </form>
             </div>
           </div>
         </div>
@@ -622,8 +664,34 @@
             </li>
           </ul>
         </div>
+        <form class="subscription" autocomplete="on">
+          <div
+            class="subscription-group"
+            aria-labelledby="subscription-details"
+          >
+            <h2 class="subscription-title" id="subscription-details">
+              Подпишитесь на рассылку
+            </h2>
+            <input
+              class="subscription-email"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button class="btn hero-button subscription-btn" type="submit">
+              Подписаться
+              <svg class="subscription-icon" width="24" height="24">
+                <use
+                  class="subscription-use"
+                  href="./images/icons.svg#icon-send"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/submit.js"></script>
   </body>
 </html>
