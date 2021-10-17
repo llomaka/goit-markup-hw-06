@@ -387,7 +387,33 @@
             </li>
           </ul>
         </div>
+        <form class="subscription" autocomplete="on">
+          <div
+            class="subscription-group"
+            aria-labelledby="subscription-details"
+          >
+            <h2 class="subscription-title" id="subscription-details">
+              Подпишитесь на рассылку
+            </h2>
+            <input
+              class="subscription-input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button class="btn hero-button subscription-btn" type="submit">
+              Подписаться
+              <svg class="subscription-icon" width="24" height="24">
+                <use
+                  class="subscription-use"
+                  href="./images/icons.svg#icon-send"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
+    <script src="./js/submit.js"></script>
   </body>
 </html>
