@@ -305,6 +305,7 @@
   border: 1px solid var(--modal-border-color);
   border-radius: 25px;
   fill: var(--logo-color);
+  transition: fill 250ms var(--timing-function);
 }
 
 .icon-close:hover,
