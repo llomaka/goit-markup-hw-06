@@ -20,6 +20,7 @@
   --about-caption-color: rgba(47, 48, 58, 0.8);
   --portfolio-overlay-color: rgba(33, 150, 243, 0.9);
   --modal-placeholder-color: rgba(117, 117, 117, 0.5);
+  --modal-border-color: rgba(0, 0, 0, 0.1);
 
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -298,7 +299,9 @@
 
 .icon-close {
   display: block;
-  fill: currentColor;
+  border: 1px solid var(--modal-border-color);
+  border-radius: 25px;
+  fill: var(--logo-color);
 }
 
 .hero-group {
