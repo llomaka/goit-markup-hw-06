@@ -341,6 +341,7 @@
   border-radius: 4px;
   color: var(--primary-text-color);
   outline: none;
+  transition: border 250ms var(--timing-function);
 }
 
 .form-icon {
@@ -349,6 +350,7 @@
   left: 12px;
   fill: currentColor;
   transform: translateY(-50%);
+  transition: fill 250ms var(--timing-function);
 }
 
 .form-label,
@@ -380,6 +382,7 @@
   color: var(--modal-placeholder-color);
   color: var(--primary-text-color);
   outline: none;
+  transition: border 250ms var(--timing-function);
 }
 
 .form-comments::placeholder {
@@ -397,6 +400,9 @@
 .icon-acceptance {
   position: absolute;
   top: -100%;
+  left: 12px;
+  width: 16px;
+  height: 15px;
 }
 
 .icon-clear {
@@ -423,6 +429,20 @@
 .form-field:focus-within .form-icon {
   fill: var(--accent-color);
 }
+
+.form-acceptance:checked ~ .icon-clear {
+  border-color: transparent;
+}
+
+.form-acceptance:checked ~ .icon-acceptance {
+  top: 50%;
+  fill: var(--accent-color);
+  transform: translateY(-50%);
+}
+
+/* .form-acceptance:checked .icon-acceptance {
+  top: 100%;
+} */
 
 /* Розділ Особенности */
 
@@ -838,10 +858,16 @@
   border: 1px solid var(--subscription-border-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  outline: none;
+  transition: border 250ms var(--timing-function);
 }
 
 .subscription-input::placeholder {
   color: var(--footer-contatcs-color);
+}
+
+.subscription-input:focus-within {
+  border: 1px solid var(--footer-logo-color);
 }
 
 .subscription-btn {
