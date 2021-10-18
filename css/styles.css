@@ -403,6 +403,7 @@
   left: 12px;
   width: 16px;
   height: 15px;
+  pointer-events: none;
 }
 
 .icon-clear {
@@ -414,6 +415,7 @@
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
   transform: translateY(-50%);
+  pointer-events: none;
 }
 
 .form-link {
