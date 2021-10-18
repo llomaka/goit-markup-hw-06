@@ -340,6 +340,7 @@
   border: 1px solid var(--form-border-color);
   border-radius: 4px;
   color: var(--primary-text-color);
+  outline: none;
 }
 
 .form-icon {
@@ -378,6 +379,7 @@
   border-radius: 4px;
   color: var(--modal-placeholder-color);
   color: var(--primary-text-color);
+  outline: none;
 }
 
 .form-comments::placeholder {
@@ -411,6 +413,15 @@
 .form-link {
   text-decoration: underline;
   color: var(--accent-color);
+}
+
+.form-field:focus-within .form-input,
+.form-field:focus-within .form-comments {
+  border: 1px solid var(--accent-color);
+}
+
+.form-field:focus-within .form-icon {
+  fill: var(--accent-color);
 }
 
 /* Розділ Особенности */
@@ -822,7 +833,7 @@
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: inherit;
-  color: inherit;
+  color: var(--white-color);
   background-color: transparent;
   border: 1px solid var(--subscription-border-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
